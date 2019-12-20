@@ -6,7 +6,7 @@ sidebar_label: Install Milvus
 
 # Install Milvus 
 
-See [here](../release/v0.5.1.md) for what's new in the latest release.
+See [here](../release/v0.5.3.md) for what's new in the latest release.
 
 ## Prerequisites
 
@@ -51,15 +51,15 @@ See [here](../release/v0.5.1.md) for what's new in the latest release.
 2. Pull the image for the latest release of Milvus:
 
    ```shell
-   docker pull milvusdb/milvus:latest
+   docker pull milvusdb/milvus:0.5.3-d111319-75998b
    ```
 
 3. Download Milvus source file.
 
    ```shell
    # Create Milvus file
-   $ mkdir -p /home/<$USER>/milvus/conf
-   $ cd home/<$USER>/milvus/conf
+   $ mkdir -p /home/$USER/milvus/conf
+   $ cd home/$USER/milvus/conf
    $ wget https://raw.githubusercontent.com/milvus-io/docs/master/assets/server_config.yaml
    $ wget https://raw.githubusercontent.com/milvus-io/docs/master/assets/log_config.conf
    ```
@@ -70,7 +70,7 @@ See [here](../release/v0.5.1.md) for what's new in the latest release.
 
    ```shell
    # Start Milvus
-   $ docker run -td --gpus all -e "TZ=Asia/Shanghai" -p 19530:19530 -p 8080:8080 -v /home/<$USER>/milvus/db:/opt/milvus/db -v /home/<$USER>/milvus/conf:/opt/milvus/conf -v /home/<$USER>/milvus/logs:/opt/milvus/logs milvusdb/milvus:latest
+   $ docker run -td --gpus all -e "TZ=Asia/Shanghai" -p 19530:19530 -p 8080:8080 -v /home/$USER/milvus/db:/opt/milvus/db -v /home/$USER/milvus/conf:/opt/milvus/conf -v /home/$USER/milvus/logs:/opt/milvus/logs milvusdb/milvus:0.5.3-d111319-75998b
    ```
    
 5. Confirm Milvus running status.
