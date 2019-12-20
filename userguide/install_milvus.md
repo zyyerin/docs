@@ -60,8 +60,8 @@ See [here](../release/v0.5.3.md) for what's new in the latest release.
    # Create Milvus file
    $ mkdir -p /home/$USER/milvus/conf
    $ cd home/$USER/milvus/conf
-   $ wget https://raw.githubusercontent.com/milvus-io/docs/master/assets/server_config.yaml
-   $ wget https://raw.githubusercontent.com/milvus-io/docs/master/assets/log_config.conf
+   $ wget https://raw.githubusercontent.com/milvus-io/docs/0.5.3/assets/server_config.yaml
+   $ wget https://raw.githubusercontent.com/milvus-io/docs/0.5.3/assets/log_config.conf
    ```
 
 4. Start Milvus server.
